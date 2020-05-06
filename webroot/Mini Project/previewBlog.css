@@ -1,0 +1,13 @@
+.previewBtns{
+    width: 25%;
+    margin-left: 15%;
+    margin-right: 5%;
+    padding: 2% 1%;
+    font-size: 150%;
+    background-color: #065d93;
+    border: 2pt #043e62 solid;
+    color: white;
+}
+.previewBtns:hover{
+  background-color: #054d7a;
+}

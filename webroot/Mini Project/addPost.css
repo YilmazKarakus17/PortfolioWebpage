@@ -1,0 +1,296 @@
+/* elements with this class get shown */
+.show{
+  display: block;
+}
+
+/* elements with this class dont get shown */
+.hide{
+  display: none;
+}
+
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************ Header and navigation bar styling *********************************************************************/
+/* styling the header */
+header{
+  width: 100%;
+  min-height: 8em;
+  background-color: #283350;
+}
+
+/* Styling the header Titles */
+header h1{
+  color: #F4AF1B;
+  font-size: 350%;
+  text-align: center;
+}
+header h2{
+  color: #F4AF1B;
+  font-size: 175%;
+  text-align: center;
+}
+
+/* Getting rid of the underline for the links in the header */
+header a{
+  text-decoration: none;
+}
+
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************ main body Styling *********************************************************************/
+
+#main{
+  width: 100%;
+  margin-top: 7%;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+@media only screen and (max-width: 1800px)
+{
+  #main{
+    margin-top: 7%;
+    padding-bottom: 6%;
+  }
+}
+@media only screen and (max-width: 1500px)
+{
+  #main{
+    margin-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+@media only screen and (max-width: 950px)
+{
+  #main{
+    margin-top: 18%;
+    padding-bottom: 17%;
+  }
+}
+@media only screen and (max-width: 700px)
+{
+  #main{
+    margin-top: 22%;
+    padding-bottom: 28%;
+  }
+}
+@media only screen and (max-width: 500px)
+{
+  #main{
+    margin-top: 25%;
+    padding-bottom: 30%;
+  }
+}
+
+/* styling the formSection in main*/
+#formSection{
+  width: 75%;
+  margin-left: 30%;
+}
+@media only screen and (max-width: 1500px)
+{
+  #formSection{
+    width: 50%;
+    margin-left: 30%;
+  }
+}
+@media only screen and (max-width: 1000px)
+{
+  #formSection{
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  #formSection{
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  #formSection{
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************ Form Styling *********************************************************************/
+/* styling the post form*/
+form{
+  width: 50%;
+  margin: auto;
+  background-color: #3baff7;
+}
+@media only screen and (max-width: 1600px)
+{
+  form{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1200px)
+{
+  form{
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  form{
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  form{
+    width: 100%;
+  }
+}
+
+/* Styling the form heading */
+form h1{
+  text-align: center;
+  font-size: 250%;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+/*styling the fieldsets in the form*/
+fieldset{
+  border: none;
+  width: 100%;
+}
+
+/* styling the fieldset containing Title and Body and errorMessage*/
+.postInputs{
+  margin-left: 3%;
+  padding-bottom: 2%;
+}
+
+/*Styling the text input for title */
+#Title{
+  width: 90%;
+  font-size: 100%;
+  margin: auto;
+  padding: 1% 1%;
+  margin-bottom: 3%;
+}
+
+/* styling the textarea */
+#Body{
+  width: 90%;
+  font-size: 100%;
+  margin: auto;
+  resize: none;
+  padding: 1% 1%;
+  margin-bottom: 3%;
+}
+
+
+/* Styling the errorMessage */
+#errorMessage{
+  font-size: 125%;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+/* Styling the fieldset previewBtnFieldset */
+.previewBtnFieldset{
+  padding-bottom: 2%;
+}
+/* Styling the preview button */
+#previewBtn{
+  margin-left: 20%;
+  padding: 2% 25%;
+  background-color: #065d93;
+  border: 2pt #043e62 solid;
+}
+#previewBtn:hover{
+  background-color: #054d7a;
+}
+/* Styling the fieldset for the buttons */
+.btnFieldset{
+  padding-bottom: 5%;
+}
+/* Styling the submit and reset buttons */
+fieldset[class="btnFieldset"] input{
+  padding: 4% 15%;
+  background-color: #065d93;
+  border: 2pt #043e62 solid;
+}
+fieldset[class="btnFieldset"] button{
+  padding: 4% 15%;
+  background-color: #065d93;
+  border: 2pt #043e62 solid;
+}
+@media only screen and (max-width: 600px)
+{
+  fieldset[class="btnFieldset"] input{
+    padding: 4% 10%;
+  }
+  fieldset[class="btnFieldset"] button{
+    padding: 4% 10%;
+  }
+}
+fieldset[class="btnFieldset"] input:hover{
+  background-color: #054d7a;
+}
+fieldset[class="btnFieldset"] button:hover{
+  background-color: #054d7a;
+}
+
+/* Styling the submit and reset buttons positioning */
+#submitBtn{
+  margin-left: 7.5%;
+  margin-right: 10%;
+}
+@media only screen and (max-width: 600px)
+{
+  #submitBtn{
+    margin-left: 15%;
+    margin-right: 10%;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  /*styling the gap between reset button and submit button */
+  #resetBtn{
+    margin-top: 3%;
+    margin-left: 5%;
+  }
+}
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************* Footer Section ****************************************************************************************/
+
+/*styling the size and color */
+footer{
+  width: 100%;
+  background-color: #283350;
+  text-align: center;
+  padding-bottom: 1%;
+  overflow: hidden;
+  height: 10em;
+}
+
+/*styling the link fonts */
+.footer-links a{
+  font-size: 150%;
+  list-style: none;
+  text-decoration: none;
+  padding: 1% 5%;
+  color: #F4AF1B;
+}
+.footer-links a:hover{
+  color: linen;
+}
+
+/* styling the copy right notices */
+.footer-copyright{
+  font-size: 125%;
+  padding: 2% 1%;
+  color: white;
+}
+
+.footer-copyright a{
+  text-decoration: none;
+  color: #F4AF1B;
+}

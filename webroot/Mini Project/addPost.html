@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Add Post Page</title>
+    <link rel="stylesheet" href="addPost.css">
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <script src="https://kit.fontawesome.com/1b5902ce56.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="MainHeader">
+      <nav id="HeaderNav">
+        <a href="index.php">
+          <hgroup>
+              <h1>Yilmaz Karakus</h1>
+              <h2>Computer Science Student</h2>
+          </hgroup>
+        </a>
+      </nav>
+    </header>
+    <div id="main">
+      <section id="formSection">
+        <form id="addPostForm" method="POST" action="addPost.php">
+          <fieldset class="postInputs">
+            <h1>Add Blog</h1>
+            <input type="hidden" id="DateTime" name="DateTime"/>
+            <input type="hidden" id="Month" name="Month"/>
+            <input type="text" class="postInputs" id="Title" name="Title" placeholder="Title">
+            <br/>
+            <textarea id="Body" rows="10" name="Body" placeholder="Enter your text here"></textarea>
+            </br>
+            <label id="errorMessage"></label>
+          </fieldset>
+          <fieldset class="btnFieldset">
+            <button type="button" id="previewBtn">Preview</button>
+          </fieldset>
+          <fieldset class="btnFieldset">
+            <button type="button" id="submitBtn">Post</button>
+            <input type="reset" value="Clear" id="resetBtn">
+          </fieldset>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <nav id="footerNavigation">
+        <ul class="footer-links">
+          <a href="index.php#AboutMe">About Me</a>
+          <a href="index.php#Contact">Contact</a>
+          <a href="mailto:ec19224@qmul.ac.uk">Email</a>
+        </ul>
+      </nav>
+      <div class="footer-copyright">© 2020 Copyright
+        <a href="index.php">Yilmaz Karakus</a>
+      </div>
+    </footer>
+    <script src="addPostEventListener.js"></script>
+  </body>
+</html>

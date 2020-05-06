@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="loginPage.css" type="text/css">
+  </head>
+  <body>
+    <header id="MainHeader">
+      <nav id="HeaderNav">
+        <a href="index.php">
+          <hgroup>
+              <h1>Yilmaz Karakus</h1>
+              <h2>Computer Science Student</h2>
+          </hgroup>
+        </a>
+      </nav>
+    </header>
+    <div id="main">
+      <form method="POST" action="login.php">
+        <h1>Login</h1>
+        <fieldset class="inputFieldset">
+          <input type="text" name="Email" class="formInput" placeholder="Email" id="Email">
+          <input type="password" name="Password" class="formInput" placeholder="Password" autocomplete="off" id="Password">
+          <br/>
+          <label id="loginOutput"></label>
+        </fieldset>
+        <fieldset>
+            <input type="submit" id="submitBTN" value="Login">
+        </fieldset>
+      </form>
+    </div>
+    <footer>
+      <nav id="footerNavigation">
+        <ul class="footer-links">
+          <a href="index.php#AboutMe">About Me</a>
+          <a href="index.php#Contact">Contact</a>
+          <a href="mailto:ec19224@qmul.ac.uk">Email</a>
+        </ul>
+      </nav>
+      <div class="footer-copyright">© 2020 Copyright
+        <a href="index.php">Yilmaz Karakus</a>
+      </div>
+    </footer>
+    <script src="loginFormValidation.js"></script>
+  </body>
+</html>

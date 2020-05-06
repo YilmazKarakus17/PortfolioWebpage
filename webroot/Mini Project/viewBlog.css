@@ -1,0 +1,255 @@
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************ Header styling *********************************************************************/
+/* styling the header */
+header{
+  width: 100%;
+  min-height: 5em;
+  background-color: #283350;
+}
+
+/* container for the heading */
+.homepageLink{
+  width: 30%;
+  margin-left: 35%;
+  background-color: #283350;
+}
+@media only screen and (max-width: 1300px)
+{
+  .homepageLink{
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  .homepageLink{
+    width: 45%;
+    margin-left: 27.5%;
+  }
+}
+
+/* Styling the header Titles */
+header h1{
+  color: #F4AF1B;
+  font-size: 350%;
+  text-align: center;
+}
+header h2{
+  color: #F4AF1B;
+  font-size: 175%;
+  text-align: center;
+}
+@media only screen and (max-width: 1300px)
+{
+  header h1{
+    font-size: 250%;
+  }
+  header h2{
+    font-size: 150%;
+  }
+}
+@media only screen and (max-width: 1000px)
+{
+  header h1{
+    font-size: 210%;
+  }
+  header h2{
+    font-size: 140%;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  header h1{
+    font-size: 200%;
+  }
+  header h2{
+    font-size: 120%;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  header h1{
+    font-size: 175%;
+  }
+  header h2{
+    font-size: 110%;
+  }
+}
+
+/* Getting rid of the underline for the links in the header */
+header a{
+  text-decoration: none;
+}
+
+
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************ Navigation bar styling *********************************************************************/
+/*styling the navbar */
+#HeaderNav
+{
+  background-color: #3a3b3b;
+}
+
+/* styling the navigation buttons */
+.navigation-btns{
+  display: inline;
+}
+.navigation-btns:hover{
+  color: linen;
+}
+.navigation-btns:focus{
+  color: linen;
+  outline: none;
+}
+
+/*styling the navigation buttons */
+.navigation-btns{
+  width: 15%;
+  margin-left: 25%;
+  font-size: 125%;
+  color: #F4AF1B;
+  background: Transparent;
+  border: none;
+}
+@media only screen and (max-width: 800px)
+{
+  .navigation-btns{
+    font-size: 105%;
+    width: 17%;
+    margin-left: 20%;
+  }
+  #dropdownBtn{
+    font-size: 105%;
+  }
+}
+/*---------- styling the dropdown -------------*/
+/* styling the button for the dropdown */
+#dropdownBtn
+{
+  font-size: 125%;
+  color: #F4AF1B;
+  background: Transparent;
+  border: none;
+  border-radius: 2%;
+  width: 15%;
+}
+#dropdownBtn:hover{
+  color: linen;
+}
+
+/* styling the dropdown-content */
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+}
+
+/* styling the dropdown button */
+.dropdown-content button
+{
+  display: inline-block;
+  font-size: 125%;
+  color: #F4AF1B;
+  background-color: #283350;
+  border: 1pt solid #283350;
+  width: 225%;
+  padding: 5.5% 2%;
+}
+@media only screen and (max-width: 800px)
+{
+  .dropdown-content button
+  {
+    width: 200%;
+  }
+}
+.dropdown-content button:hover
+  {
+    color: white;
+  }
+
+.show{
+  display: block;
+}
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************* Main Section ****************************************************************************************/
+/* Styling the main container (the body) */
+#main{
+  width: 100%;
+  margin-top: 0%;
+  background-color: #283350;
+}
+
+/* styling the container holding all the posts */
+#postContainer{
+  width: 75%;
+  margin-left: 12.5%;
+  padding-bottom: 2%;
+  border-bottom: 30pt #333333 solid;
+}
+
+.posts{
+  border-bottom: 2pt #F4AF1B solid;
+}
+
+/* Styling the PostDates */
+#postContainer i{
+  font-size: 90%;
+}
+.PostDates{
+  color: #F4AF1B;
+  margin-top: 2%;
+  width: 13em;
+  float: right;
+  margin-left: 100%;
+}
+
+/* styling the titles */
+.postTitles{
+  color: white;
+  font-size: 175%;
+  width: 100%;
+  float: left;
+  padding: 2% 0%;
+}
+
+/* styling the body */
+.postBody{
+  color: white;
+  font-size: 130%;
+  margin-bottom: 2%;
+}
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************* Footer Section ****************************************************************************************/
+/*styling the size and color */
+footer{
+  width: 100%;
+  background-color: #283350;
+  text-align: center;
+  padding-bottom: 1%;
+  overflow: hidden;
+  height: 10em;
+}
+
+/*styling the link fonts */
+.footer-links a{
+  font-size: 150%;
+  list-style: none;
+  text-decoration: none;
+  padding: 1% 5%;
+  color: #F4AF1B;
+}
+.footer-links a:hover{
+  color: linen;
+}
+
+/* styling the copy right notices */
+.footer-copyright{
+  font-size: 125%;
+  padding: 2% 1%;
+  color: white;
+}
+
+.footer-copyright a{
+  text-decoration: none;
+  color: #F4AF1B;
+}

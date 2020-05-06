@@ -1,0 +1,981 @@
+/************************************************/
+/* Standardised styling rules for all elements */
+
+/* html styling */
+html{
+  scroll-behavior: smooth;
+  color: #595959;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*styling all the containers marked with coloured-bg */
+.coloured-bg{
+  background-color: #f2f2f2;
+}
+
+/* displaying elements with class display-at-800px only at 800px or less*/
+.display-at-800px{
+  display: none;
+}
+@media only screen and (max-width: 800px)
+{
+  .display-at-800px{
+    display: block;
+  }
+}
+
+/*doesn't display elements with the following class name */
+.do-not-display{
+  display: none;
+}
+/*********************************************/
+/************ Subheadings *******************/
+/* styling the h2 subheadings */
+.H2SubHeading{
+  font-size: 250%;
+  text-decoration: none;
+  color: #283350;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+@media only screen and (max-width: 1900px)
+{
+  .H2SubHeading{
+    padding-top: 3%;
+  }
+}
+@media only screen and (max-width: 1350px)
+{
+  .H2SubHeading{
+    padding-top: 3.5%;;
+  }
+}
+@media only screen and (max-width: 1300px)
+{
+  .H2SubHeading{
+    padding-top: 4%;
+  }
+}
+@media only screen and (max-width: 1200px)
+{
+  .H2SubHeading{
+    padding-top: 8%;
+  }
+}
+@media only screen and (max-width: 900px)
+{
+  .H2SubHeading{
+    padding-top: 9%;
+  }
+}
+@media only screen and (max-width: 900px)
+{
+  .H2SubHeading{
+    padding-top: 10%;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  .H2SubHeading{
+    padding-top: 15%;
+  }
+}
+
+
+
+/* styling the h3 subheadings */
+.H3SubHeading{
+  font-size: 125%;
+  color: #595959;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************ Header and navigation bar styling *********************************************************************/
+/* positioning and sizing the main header for the homepage */
+#MainHeader{
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  z-index: 2147483647;
+  top: 0%;
+  left: 0%;
+  margin-left: 0%;
+  margin-right: 10%;
+
+}
+/* styling color scheme and border for main header */
+#MainHeader{
+  background-color: #283350;
+  box-shadow: 0.1em 0.1em #323c57;
+  border: 1% solid #323c57;
+  border-radius: 2%;
+  background-color: #283350;
+}
+
+/****styling the header group *****/
+hgroup{
+  background-color: #283350;
+  float: left;
+  margin: 0%;
+  width: 30%;
+  z-index: 3;
+}
+/* when screen size is 1500px */
+@media only screen and (max-width: 1500px) {
+  hgroup{
+    background-color: #283350;
+    float: left;
+    margin: 0%;
+    width: 35%;
+    z-index: 3;
+  }
+}
+/* when screen size is 1150px */
+@media only screen and (max-width: 1150px) {
+  hgroup{
+    background-color: #283350;
+    float: left;
+    margin: 0%;
+    width: 40%;
+    z-index: 3;
+  }
+}
+
+
+/*Styling the h1 element in the header */
+#MainHeader h1{
+color: #F4AF1B;
+font-size: 200%;
+padding-top: 2%;
+margin-left: 5%;
+}
+/*Styling the h2 element in the header */
+#MainHeader h2{
+color: #F4AF1B;
+font-size: 150%;
+padding-top: 0.25%;
+margin-left: 5%;
+}
+
+
+/*not showing the dropdown button */
+#dropBtn{
+  display: none;
+}
+
+/*-------styling the drop down container --------*/
+.dropdown{
+  float: left;
+  margin-left: 1%;
+  width: 80%;
+  background-color: #283350;
+  margin-top: 1.5%;
+}
+/* when screen size is 2000px */
+@media only screen and (max-width: 2000px) {
+  .dropdown{
+    float: left;
+    margin-left: 1%;
+    width: 60%;
+    background-color: #283350;
+  }
+}
+/* when screen size is 1800px */
+@media only screen and (max-width: 1800px) {
+  .dropdown{
+    float: left;
+    margin-left: 1%;
+    width: 60%;
+    background-color: #283350;
+  }
+}
+/* when screen size is 1200px */
+@media only screen and (max-width: 1200px) {
+  .dropdown{
+    float: left;
+    margin-left: 1%;
+    width: 30%;
+    background-color: #283350;
+  }
+}
+
+
+/* styling the links in the navigation */
+.dropdown-content a{
+  font-size: 100%;
+  color: #A9A9A9;
+  text-decoration: none;
+  padding: 1% 1%;
+}
+.dropdown-content a:hover{
+  color: #cccccc;
+  text-decoration: none;
+}
+
+
+/*styling button in the navigation */
+.dropdown-content button{
+  position: relative;
+  right: 0%;
+  padding: 0.5% 1%;
+  font: 120%;
+  border-radius: 2%;
+  font-size: 100%;
+  border-radius: 5%;
+}
+.dropdown-content button:hover{
+  color: #A9A9A9;;
+}
+/* if the button is a login button */
+.login-button{
+  background-color: #bfbfbf;
+  border: 1pt #cccccc solid;
+  color: white;
+  width: 10%;
+}
+/* if the button is a logout button */
+.logout-button{
+  background-color: #8c8c8c;
+  border: 2pt #999999 solid;
+  color: white;
+  width: 15%;
+}
+
+/*changing the navigation bar to have drop down menu at 1200px */
+@media only screen and (max-width: 1200px) {
+  /* positioning and sizing the main header for the homepage */
+  #MainHeader{
+    max-height: 12%;
+    min-height: 12%;
+  }
+
+  /*Styling the h1 element in the header */
+  #MainHeader h1{
+  color: #F4AF1B;
+  font-size: 200%;
+  padding-top: 0.4%;
+  margin-left: 5%;
+  }
+  /*Styling the h2 element in the header */
+  #MainHeader h2{
+  color: #F4AF1B;
+  font-size: 140%;
+  padding-top: 0.4%;
+  margin-left: 5%;
+  }
+
+  /*styling the drop down container */
+  .dropdown{
+    float: right;
+    margin-left: 0%;
+    width: 5%;
+    margin-right: 10%;
+  }
+  /*styling the headings */
+  hgroup{
+    background-color: #283350;
+    float: left;
+    margin: 0%;
+    width: 70%;
+    z-index: 3;
+  }
+
+  /*styling rules for drop down button */
+  .dropbtn{
+    padding: 1% 50%;
+    background: #283350;
+    color: #A9A9A9;
+    font-size: 250%;
+    border-radius: 5%;
+    border: none;
+    margin-top: 12%;
+  }
+  #dropBtn{
+    display:block;
+  }
+  .dropbtn:hover, .dropbtn:focus{
+    color: linen;
+  }
+
+  /*styling rule for drop down container */
+  .dropdown{
+    position: relative;
+    display: inline-block;
+    background-color: #283350;
+  }
+
+  /*styling rule for drop down content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 120%;
+    right: -205%;
+    min-width: 2005%;
+    overflow: auto;
+    z-index: 3;
+    box-shadow: 0% 1% 2% 0% grey;
+    background-color: #283350;
+  }
+  /* at 560px */
+  @media only screen and (max-width: 560px) {
+    /*Styling the h1 element in the header */
+    #MainHeader h1{
+    color: #F4AF1B;
+    font-size: 200%;
+    padding-top: 1%;
+    margin-left: 5%;
+    }
+    /*Styling the h2 element in the header */
+    #MainHeader h2{
+    color: #F4AF1B;
+    font-size: 140%;
+    padding-top: 0.5%;
+    margin-left: 5%;
+    }
+
+    /*styling rule for drop down content */
+    .dropdown-content {
+      top: 140%;
+    }
+  }
+
+  /*styling rules for drop down links */
+  .dropdown-content a {
+    color: #d9d9d9;
+    padding: 1% 1%;
+    font-size: 105%;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {color: white;}
+
+  /*styling rule to show the content */
+  .show{display: block;}
+
+  /*styling button in the navigation */
+  .dropdown-content button{
+    margin-left: 80%;
+    padding: 1% 1%;
+    width: 20%;
+    font: 120%;
+  }
+}
+
+
+
+/***********************************************************************************************************************************************************************************************/
+/********************************************************************************** Gallery section styling **********************************************************************************/
+.row0{
+  margin-top: 5%;
+}
+@media only screen and (max-width: 1500px) {
+  .row0{
+    margin-top: 7%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .row0{
+    margin-top: 7%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .row0{
+    margin-top: 12%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .row0{
+    margin-top: 15%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .row0{
+    margin-top: 18%;
+  }
+}
+.row0{
+  position: relative;
+  width: 100%;
+}
+
+.row0 img{
+  position: relative;
+  width: 100%;
+}
+
+/*styling the gallery buttons in row 0 */
+.row0 button{
+  position: absolute;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  top: 35%;
+  outline: none;
+  border: none;
+  color: linen;
+  overflow: hidden;
+  font-size: 750%;
+  font-weight: bold;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+}
+.row0 button:focus{
+    outline:none;
+}
+.row0 button:hover{
+  color: grey;
+}
+@media only screen and (max-width: 1200px)
+{
+  .row0 button{
+    font-size: 450%;
+    color: white;
+    top: 35%;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  .row0 button{
+    font-size: 350%;
+    color: white;
+    top: 35%;
+  }
+}
+@media only screen and (max-width: 500px)
+{
+  .row0 button{
+    font-size: 250%;
+    color: white;
+    top: 30%;
+  }
+}
+/* positioning left button */
+#leftGalleryBtn{
+  left: 0%;
+}
+/* positioning right button */
+#rightGalleryBtn{
+  right: 0%;
+}
+/* positioning the bottom button */
+#downButton{
+  font-size: 400%;
+  bottom: -40%;
+  left: 50%;
+}
+@media only screen and (max-width: 1200px)
+{
+  #downButton{
+    font-size: 200%;
+    bottom: -50%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  #downButton{
+    font-size: 150%;
+    bottom: -50%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 500px)
+{
+  #downButton{
+    font-size: 125%;
+    bottom: -50%;
+    left: 50%;
+  }
+}
+
+/* Styling the figcaption */
+#galleryCaption{
+  text-align: center;
+  width: 100%;
+}
+
+/***********************************************************************************************************************************************************************************************/
+/********************************************************************************** About me section styling **********************************************************************************/
+
+/* styling the entire about me sections top margin and underline */
+.row1{
+  padding-top: 1%;
+  padding-bottom: 2%;
+  overflow: hidden;
+}
+/* styling row 1 fonts */
+.row1 li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 125%;
+    padding: 0.5% 1%;
+}
+
+/*styling the aside of about me section*/
+#AboutMe aside{
+  background-color: #f2f2f2;
+}
+
+/*Styling the subtitles in aside tag*/
+.aside-subheadings{
+  background-color: #F4AF1B;
+  color: #283350;
+  font-size: 150%;
+  padding: 2% 2%;
+  text-align: center;
+}
+
+/* styling the the left aside parts of the article */
+.left-aside{
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 20%;
+  text-align: center;
+}
+
+
+/* styling the about me article container */
+.mainArticle{
+  float: left;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+}
+/* styling the the mainArticle article */
+.mainArticle article{
+  float: left;
+  width: 50%;
+  font-size: 120%;
+}
+/*styling the figure in the mainArticle h3*/
+.mainArticle h3{
+  font-size: 150%;
+  width: 100%;
+}
+/*styling the figure in the mainArticle figure */
+.mainArticle figure{
+  float: left;
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
+}
+/*styling the figcaption */
+.mainArticle figcaption{
+  margin-left: 20%;
+}
+/*styling the button in the figure */
+.mainArticle figure button{
+  width: 60%;
+  margin: auto;
+}
+/*styling the image in the button */
+.mainArticle figure button img{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/* styling the the right aside parts of the article */
+.right-aside{
+  float: left;
+  width: 25%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Styling rules for the whole About me section when screen is 800px */
+@media only screen and (max-width: 1200px) {
+  /* Resizing the left-aside to cover whole page */
+  .left-aside{
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  /* Resizing the mainArticle div to cover whole page */
+  .mainArticle{
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  /* Resizing the article in mainArticle div to cover whole page */
+  .mainArticle article{
+    width: 100%;
+    margin-left: 0%;
+  }
+  /* Resizing the figure in mainArticle div to cover whole page */
+  .mainArticle figure{
+    width: 100%;
+    margin-left: 25%;
+  }
+  /* Resizing the right-aside to cover whole page */
+  .right-aside{
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+
+/* Styling rules for the whole About me section when screen is 800px */
+@media only screen and (max-width: 500px) {
+  /* Resizing the left-aside to cover whole page */
+  .left-aside{
+    width: 100%;
+    margin-left: 0%;
+  }
+  /* Resizing the mainArticle div to cover whole page */
+  .mainArticle{
+    width: 100%;
+    margin-left: 0%;
+  }
+  /* Resizing the article in mainArticle div to cover whole page */
+  .mainArticle article{
+    width: 100%;
+    margin-left: 0%;
+  }
+  /* Resizing the figure in mainArticle div to cover whole page */
+  .mainArticle figure{
+    width: 100%;
+    margin-left: 18%;
+  }
+  /* Resizing the right-aside to cover whole page */
+  .right-aside{
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+/***********************************************************************************************************************************************************************************************/
+/**************************************************************************************** Skills Section **************************************************************************************/
+/* padding and border styling the skills main container */
+#Skills{
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-top: 0.2em #d9d9d9 solid;
+  border-bottom: 0.2em #d9d9d9 solid;
+}
+/* sizing the mySkills section */
+.mySkills{
+  width: 75%;
+  margin: auto;
+  margin-top: 2%;
+  font-size: 125%;
+  text-align: center;
+  color: #737373;
+}
+@media only screen and (max-width: 1200px)
+{
+  .mySkills{
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px)
+{
+  .mySkills{
+    width: 100%;
+  }
+}
+
+
+/*styling the display method of the li */
+#Skills li{
+  display: inline;
+}
+
+/*styling the logos for skills section */
+#Skills img{
+  border-radius: 10%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 15%;
+  height: 10%;
+}
+
+/* sizing and positioning the skill icon container */
+#SkillsIcon{
+  color: #666666;
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  margin-left: 30%;
+}
+
+/* styling the skill icons */
+#SkillsIcon li{
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 10%;
+  font-size: 125%;
+}
+
+/* styling the skill icons */
+#SkillsIcon li i{
+  margin-left: 5%;
+  margin-right: 15%;
+}
+
+
+/***********************************************************************************************************************************************************************************************/
+/**************************************************************************************** Experience Section ***********************************************************************************/
+
+/* padding the experience main container*/
+#Experience
+{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* Styling the table in experience section */
+#Experience table{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  color: #8c8c8c;
+}
+@media only screen and (max-width: 1000px)
+{
+  #Experience table{
+    width: 100%;
+    font-size: 100%;
+  }
+}
+
+/* Styling the table data in thead element */
+#Experience table thead td{
+  border-bottom: 2pt black solid;
+  font-size: 125%;
+  font-weight: bold;
+  color: #666666;
+  text-decoration: underline;
+}
+/* Styling the table data in tbody element */
+#Experience table tbody td{
+  padding: 1% 1%;
+}
+@media only screen and (max-width: 800px)
+{
+  #Experience table tbody td{
+    border-top: 2pt black solid;
+    font-size: 90%;
+  }
+}
+
+
+/***********************************************************************************************************************************************************************************************/
+/*********************************************************************************** Education Section ****************************************************************************************/
+/* padding and border styling the education main container*/
+#education
+{
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-top: 0.2em #d9d9d9 solid;
+  border-bottom: 0.2em #d9d9d9 solid;
+}
+/** Styling the FullScreenEducationContainer that contains content for screens OVER 800px**/
+/*styling the images */
+#education img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  opacity: 1;
+}
+/*styling when image is hovered on */
+#education img:hover{
+  opacity: 0.5;
+}
+
+/* aligning the title and years to the center */
+.EducationTitle{
+  text-align: center;
+}
+.EducationYears{
+  text-align: center;
+}
+
+/** Styling the Education Table that contains content for screens UNDER 800px**/
+/*styling the table */
+#education table{
+  width: 30%;
+  margin: auto;
+  padding: 2% 2%;
+}
+
+
+/* styling the education section when the screen size hits 1500 px */
+@media only screen and (max-width: 1500px)
+{
+  #education{
+    min-height: 15em;
+  }
+
+  #education table{
+    width: 50%;
+    vertical-align: middle;
+  }
+}
+/*styling the table data */
+#education table td{
+  text-align: center;
+  margin-right: 2%;
+}
+/*styling the links in table data */
+#education table td a{
+  text-decoration: none;
+  color: inherit;
+}
+#education table td a:hover{
+  color: #F4AF1B;
+}
+
+/* styling the education section when the screen size hits 800 px
+*  removing the FullScreenEducationContainer div and making the
+*  making the table with my education background visible - mobile friendly
+*/
+@media only screen and (max-width: 800px)
+{
+  /* taking out the FullScreenEducationContainer */
+  #FullScreenEducationContainer{
+    display: none;
+  }
+  /* now displaying the table with condensed information */
+  #education table{
+    width: 100%;
+  }
+  /* adding padding between each piece of table data */
+  #education table td{
+    padding-top: 1.25%;
+    padding-bottom: 1.25%;
+  }
+
+}
+
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************* Portfolio Section ****************************************************************************************/
+#PortfolioRow{
+  width: 100%;
+  padding-bottom: 5%;
+  border-bottom: 0.2em #d9d9d9 solid;
+}
+
+/*styling the heading */
+#PortfolioRow h2{
+  width: 50%;
+  margin-left: 25%;
+}
+
+/*styling the table in PortfolioRow */
+#PortfolioRow table{
+  width: 95%;
+  margin-left: 2.5%;
+}
+/* styling the thead */
+#PortfolioRow thead{
+  font-size: 125%;
+  font-weight: bold;
+}
+
+/* styling the td */
+#PortfolioRow td{
+  padding-bottom: 1%;
+}
+
+/*styling the table data */
+#PortfolioRow table td{
+  text-align: center;
+  margin-right: 2%;
+}
+
+/*styling the links in table data */
+#PortfolioRow table td a{
+  text-decoration: none;
+  color: #283350;
+}
+#PortfolioRow table td a:hover{
+  color: #F4AF1B;
+}
+
+/* at 800px it changes the tables to be of the mobile friendly one */
+.mobileFriendlyTable{
+  display: none;
+}
+
+@media only screen and (max-width: 800px)
+{
+  /* stops displaying the table used for screens over 800px*/
+  .fullSizeTable{
+    display: none;
+  }
+  /* displays the mobile friendly one*/
+  .mobileFriendlyTable{
+    display: block;
+  }
+}
+/***********************************************************************************************************************************************************************************************/
+/**************************************************************************************** Contact Section **************************************************************************************/
+/* sizing the form text area */
+form textarea{
+  width: 67%;
+  resize: none;
+}
+
+/* styling the form buttons */
+.form-buttons{
+  padding: 1% 1%;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5%;
+}
+
+/*styling the color and font of submit button */
+[type="submit"]{
+  color: white;
+  font-weight: bold;
+  background-color: #283350;
+}
+
+/*styling the fieldset that contains the submit button */
+#SubmitFieldset{
+  margin: 0%;
+  margin: auto;
+}
+
+
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************* Footer Section ****************************************************************************************/
+
+/*styling the size and color */
+footer{
+  width: 75%;
+  margin: auto;
+  background-color: #283350;
+  height: 10%;
+  text-align: center;
+}
+
+/*styling the link fonts */
+.footer-links a{
+  font-size: 150%;
+  list-style: none;
+  text-decoration: none;
+  padding: 1% 5%;
+  color: #F4AF1B;
+}
+.footer-links a:hover{
+  color: linen;
+}
+
+/* styling the copy right notices */
+.footer-copyright{
+  font-size: 125%;
+  padding: 2% 1%;
+  color: white;
+}
+
+.footer-copyright a{
+  text-decoration: none;
+  color: #F4AF1B;
+}

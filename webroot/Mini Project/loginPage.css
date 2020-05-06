@@ -1,0 +1,170 @@
+/*styling the body */
+body{
+  background-image: url("loginBG.png");
+}
+
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************ Header and navigation bar styling *********************************************************************/
+/* styling the header */
+header{
+  width: 100%;
+  min-height: 8em;
+  background-color: #283350;
+}
+
+/* Styling the header Titles */
+header h1{
+  color: #F4AF1B;
+  font-size: 350%;
+  text-align: center;
+}
+header h2{
+  color: #F4AF1B;
+  font-size: 175%;
+  text-align: center;
+}
+
+/* Getting rid of the underline for the links in the header */
+header a{
+  text-decoration: none;
+}
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************ Form Styling *********************************************************************/
+/* Styling the heading for the login page */
+form h1{
+  font-size: 300%;
+  text-align: center;
+  background-color: #F4AF1B;
+  color: white;
+  margin: auto;
+}
+/* Styling the form components */
+/*styling the positioning and size*/
+form{
+  position: absolute;
+  left: 35%;
+  width: 30%;
+  margin-top: 10%;
+}
+/* styling the color scheme*/
+form{
+  background-color: #F4AF1B;
+  color: #283350;
+}
+@media only screen and (max-width: 1500px)
+{
+  form{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 1000px)
+{
+  form{
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-width: 800px)
+{
+  form{
+    position: absolute;
+    left: 12.5%;
+    width: 75%;
+    margin-top: 25%;
+  }
+}
+@media only screen and (max-width: 600px)
+{
+  form{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    margin-top: 40%;
+  }
+}
+
+
+/* styling the fieldsets */
+fieldset{
+  border: none;
+  overflow: hidden;
+}
+/* styling the fieldset containing Username and Password*/
+.inputFieldset{
+  margin-left: 30%;
+}
+
+/*styling the input of type text */
+input[class="formInput"]{
+  width: 55%;
+  padding: 1% 1%;
+  margin-bottom: 1%;
+  font-size: 125%;
+  display: inline-block;
+}
+
+/* styling the output message */
+#loginOutput{
+  font-size: 150%;
+  text-align: center;
+  color: #e60000;
+  font-weight: 500;
+}
+
+/*styling the submit button */
+input[type="submit"]{
+  background-color: #3c4c77;
+  color: white;
+  font-size: 125%;
+  padding: 1% 1%;
+  width: 100%;
+  border: none;
+  border-radius: 2%;
+}
+#submitBTN:hover{
+  background-color: #222b44;
+}
+/***********************************************************************************************************************************************************************************************/
+/************************************************************************************* Footer Section ****************************************************************************************/
+
+/*styling the size and color */
+footer{
+  width: 75%;
+  position: absolute;
+  top: 91%;
+  left: 12.5%;
+  margin: auto;
+  background-color: #283350;
+  height: 10%;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+/*styling the link fonts */
+.footer-links a{
+  font-size: 150%;
+  list-style: none;
+  text-decoration: none;
+  padding: 1% 5%;
+  color: #F4AF1B;
+}
+.footer-links a:hover{
+  color: linen;
+}
+
+/* styling the copy right notices */
+.footer-copyright{
+  font-size: 125%;
+  padding: 2% 1%;
+  color: white;
+}
+
+.footer-copyright a{
+  text-decoration: none;
+  color: #F4AF1B;
+}
