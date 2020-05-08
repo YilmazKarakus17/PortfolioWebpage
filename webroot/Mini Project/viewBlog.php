@@ -47,7 +47,7 @@
            die("Connection failed: " . $conn->connect_error);
           }
           //getting all the blog posts
-          $sql = "SELECT PostDateTime, PostTitle, PostBody FROM blogPostTable WHERE Month='$MonthArgument' ORDER BY postID DESC";
+          $sql = "SELECT PostDateTime, PostTitle, PostBody FROM blogPostTable ORDER BY postID DESC";
           $results = $conn->query($sql);
 
           if($results->num_rows >0)
