@@ -48,7 +48,7 @@ function submitFunction(event)
   //first checks if the form has valid input
   if (validatePost(event) == false)
   {
-    return false;
+    event.preventDefault();
   }
   //creating todays Date
   let todaysDateTime = new Date();
@@ -88,8 +88,6 @@ function submitFunction(event)
   //setting the Month value to this month
   let month = (todaysDateTime.getMonth()+1);
   document.getElementById("Month").value = month;
-  //submitting the form
-  document.getElementById("addPostForm").submit();
 }
 
 
@@ -99,28 +97,24 @@ function validatePost(event)
   if(validateTitleExists() == false)
   {
     highlightTitle();
-    event.preventDefault();
     return false;
   }
   if(validateTitleLength(5) == false)
   {
     resetTitleHighlight();
     errorMessage("The title has to be at least 5 characters");
-    event.preventDefault();
     return false;
   }
   if(validateBodyExists() == false)
   {
     resetTitleHighlight();
     highlightBody();
-    event.preventDefault();
     return false;
   }
   if(validateBodyLength(20) == false)
   {
     resetBodyHighlight();
     errorMessage("The body of post has to be at least 20 characters");
-    event.preventDefault();
     return false;
   }
   return true;

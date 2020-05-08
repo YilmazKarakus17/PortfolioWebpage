@@ -217,24 +217,13 @@ fieldset[class="btnFieldset"] input{
   background-color: #065d93;
   border: 2pt #043e62 solid;
 }
-fieldset[class="btnFieldset"] button{
-  padding: 4% 15%;
-  background-color: #065d93;
-  border: 2pt #043e62 solid;
-}
 @media only screen and (max-width: 600px)
 {
   fieldset[class="btnFieldset"] input{
     padding: 4% 10%;
   }
-  fieldset[class="btnFieldset"] button{
-    padding: 4% 10%;
-  }
 }
 fieldset[class="btnFieldset"] input:hover{
-  background-color: #054d7a;
-}
-fieldset[class="btnFieldset"] button:hover{
   background-color: #054d7a;
 }
 
