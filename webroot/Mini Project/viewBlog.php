@@ -73,7 +73,7 @@
         <a class='navigation-btns' href='logout.php'>Logout</a>
       </nav>
     </header>
-    <div id="main">
+    <section id="main">
       <?php
           //credentials used to connect to SQLiteDatabase
           $dbhost = getenv("MYSQL_SERVICE_HOST");
@@ -112,22 +112,22 @@
             //getting all the blog posts
             $sql = "SELECT PostDateTime, PostTitle, PostBody FROM blogPostTable ORDER BY postID DESC";
             $results = $conn->query($sql);
-            echo "<div id='postContainer'>";
+            echo "<section id='postContainer'>";
             //outputting all the rows of data
             for($i=1; $i<=$results->num_rows;$i++)
             {
               $row = $results->fetch_assoc();
-              echo"<div class='posts'>
+              echo"<article class='posts'>
               <i class='far fa-clock fa-1x PostDates'>".$row["PostDateTime"]."</i>
               <h2 class='postTitles'>".$row["PostTitle"]."</h2>
               <p class='postBody'>".$row["PostBody"]."</p>
-              </div>";
+              </article>";
             }
-            echo "</div>";
+            echo "</section>";
             $conn->close();
           }
        ?>
-    </div>
+    </section>
     <footer>
       <nav id="footerNavigation">
         <ul class="footer-links">
