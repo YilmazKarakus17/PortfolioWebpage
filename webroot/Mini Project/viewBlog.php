@@ -1,3 +1,30 @@
+<?php
+  //checking if there is any blogs stored and if not it will redirect to login.html
+  //credentials used to connect to SQLiteDatabase
+  $dbhost = getenv("MYSQL_SERVICE_HOST");
+  $dbport = getenv("MYSQL_SERVICE_PORT");
+  $dbuser = getenv("DATABASE_USER");
+  $dbpwd = getenv("DATABASE_PASSWORD");
+  $dbname = getenv("DATABASE_NAME");
+  // Creates connection
+  $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+  // Checks connection
+  if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
+  }
+  //getting all the blog posts
+  $sql = "SELECT PostDateTime, PostTitle, PostBody FROM blogPostTable ORDER BY postID DESC";
+  $results = $conn->query($sql);
+  //checking if the number of rows are more than 0
+  if($results->num_rows >0)
+  {
+    //do nothing
+  }
+  else {
+    //redirects to login.html
+    echo "<script>window.location.href='login.html';";
+  }
+?>
 <!DOCTYPE html>
 <html>
   <head lang="en">
@@ -34,23 +61,8 @@
           echo "</div>";
         ?>
         <?php
-          //credentials used to connect to SQLiteDatabase
-          $dbhost = getenv("MYSQL_SERVICE_HOST");
-          $dbport = getenv("MYSQL_SERVICE_PORT");
-          $dbuser = getenv("DATABASE_USER");
-          $dbpwd = getenv("DATABASE_PASSWORD");
-          $dbname = getenv("DATABASE_NAME");
-          // Creates connection
-          $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
-          // Checks connection
-          if ($conn->connect_error) {
-           die("Connection failed: " . $conn->connect_error);
-          }
-          //getting all the blog posts
-          $sql = "SELECT PostDateTime, PostTitle, PostBody FROM blogPostTable ORDER BY postID DESC";
-          $results = $conn->query($sql);
-
-          if($results->num_rows >0)
+          session_start();
+          if(isset($_SESSION['AdminStatus']))
           {
             echo "<a class='navigation-btns' id='addPostBtn' href='addPost.html'>Add Post</a>";
           }
@@ -63,6 +75,18 @@
     </header>
     <section id="main">
       <?php
+          //credentials used to connect to SQLiteDatabase
+          $dbhost = getenv("MYSQL_SERVICE_HOST");
+          $dbport = getenv("MYSQL_SERVICE_PORT");
+          $dbuser = getenv("DATABASE_USER");
+          $dbpwd = getenv("DATABASE_PASSWORD");
+          $dbname = getenv("DATABASE_NAME");
+          // Creates connection
+          $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+          // Checks connection
+          if ($conn->connect_error) {
+           die("Connection failed: " . $conn->connect_error);
+          }
           //if the $_GET['Month'] is set then show the posts belonging to that month
           if(isset($_GET['Month']))
           {
