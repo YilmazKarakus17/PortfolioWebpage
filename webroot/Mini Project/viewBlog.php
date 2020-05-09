@@ -73,7 +73,7 @@
         <a class='navigation-btns' href='logout.php'>Logout</a>
       </nav>
     </header>
-    <section id="main">
+    <div id="main">
       <?php
           //credentials used to connect to SQLiteDatabase
           $dbhost = getenv("MYSQL_SERVICE_HOST");
@@ -127,7 +127,7 @@
             $conn->close();
           }
        ?>
-    </section>
+    </div>
     <footer>
       <nav id="footerNavigation">
         <ul class="footer-links">
