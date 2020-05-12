@@ -16,10 +16,11 @@
   $sql = "SELECT * FROM blogPostTable";
   $results = $conn->query($sql);
   //checking if the number of rows are more than 0
-  if($results->num_rows == 0)
+  if(!($results->num_rows > 0))
   {
+    echo "asdf";
     ///redirects to login.html
-    echo "<script>window.location.href='login.html;</script>;";
+    echo "<script>window.location.href = 'login.html' </script>";
   }
 ?>
 <!DOCTYPE html>
