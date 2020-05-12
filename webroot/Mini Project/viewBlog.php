@@ -1,30 +1,3 @@
-<?php
-  //checking if there is any blogs stored and if not it will redirect to login.html
-  //credentials used to connect to SQLiteDatabase
-  $dbhost = getenv("MYSQL_SERVICE_HOST");
-  $dbport = getenv("MYSQL_SERVICE_PORT");
-  $dbuser = getenv("DATABASE_USER");
-  $dbpwd = getenv("DATABASE_PASSWORD");
-  $dbname = getenv("DATABASE_NAME");
-  // Creates connection
-  $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
-  // Checks connection
-  if ($conn->connect_error) {
-   die("Connection failed: " . $conn->connect_error);
-  }
-  //getting all the blog posts
-  $sql = "SELECT PostDateTime, PostTitle, PostBody FROM blogPostTable ORDER BY postID DESC";
-  $results = $conn->query($sql);
-  //checking if the number of rows are more than 0
-  if($results->num_rows >0)
-  {
-    //do nothing
-  }
-  else {
-    //redirects to login.html
-    echo "<script>window.location.href='login.html';";
-  }
-?>
 <!DOCTYPE html>
 <html>
   <head lang="en">
@@ -35,6 +8,30 @@
     <script src="https://kit.fontawesome.com/1b5902ce56.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <?php
+      //checking if there is any blogs stored and if not it will redirect to login.html
+      //credentials used to connect to SQLiteDatabase
+      $dbhost = getenv("MYSQL_SERVICE_HOST");
+      $dbport = getenv("MYSQL_SERVICE_PORT");
+      $dbuser = getenv("DATABASE_USER");
+      $dbpwd = getenv("DATABASE_PASSWORD");
+      $dbname = getenv("DATABASE_NAME");
+      // Creates connection
+      $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+      // Checks connection
+      if ($conn->connect_error) {
+       die("Connection failed: " . $conn->connect_error);
+      }
+      //getting all the blog posts
+      $sql = "SELECT * FROM blogPostTable";
+      $results = $conn->query($sql);
+      //checking if the number of rows are more than 0
+      if($results->num_rows == 0)
+      {
+        ///redirects to login.html
+        echo "<script>window.location.href='login.html';";
+      }
+    ?>
     <header id="MainHeader">
       <div class="homepageLink">
         <a href="index.php">
